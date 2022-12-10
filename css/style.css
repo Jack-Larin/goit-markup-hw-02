@@ -351,6 +351,7 @@ body{
 .img-border .h3-tittle{
     margin-top: 32px;
     margin-bottom: 8px;
+    margin-left: 16px;
 }
 
 
@@ -360,4 +361,5 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding-bottom: 32px;
+    margin-left: 16px;
 }
