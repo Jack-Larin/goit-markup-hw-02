@@ -163,7 +163,9 @@ body{
 .hero{
     background-color: var(--navy-blue);
     text-align: center;
-    height: 603px;
+    padding-top: 192px;
+    padding-bottom: 192px;
+    
 }
 
 .hero-title{
@@ -181,7 +183,7 @@ body{
     margin-right: auto;
 }
 
-.btn-hero{
+.btn-title{
     color: var(--white);
     background-color: var(--iris);
     font-family: 'roboto', sans-serif;
@@ -191,20 +193,29 @@ body{
     letter-spacing: 0.04em;
     cursor: pointer;
     padding: 16px 32px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
 }
+
+/* .btn-hero{
+    margin-bottom: 192px;
+} */
 
 
 /* benefits */
 
 
-.benefits-list .item:not(:last-child){
+.benefits-list .item{
     margin-right: 24px;
 }
 
+.benefits-list .item:last-child{
+    margin-right: 0px;
+}
+
+
 .benefits-list .item {
-    min-width: 264px;
+    flex-basis: calc((100% \ 4) - 71px);
 }
 
 .h3-style{
@@ -222,6 +233,11 @@ body{
 .h2-work{
     text-align: center;
     margin-bottom: 72px;
+}
+
+.item-work img{
+    display: block;
+    max-width: 100%;
 }
 
 .item-work:not(:last-child){
@@ -251,23 +267,26 @@ body{
 }
 
 .team-item .card-name{
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
 .card-txt{
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+
+
 
 /* footer */
 
 .footer{
     background-color: var(--navy-blue);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-info{
     max-width: 264px;
-    padding-bottom: 100px;
 }
 
 .logo-footer{
@@ -279,7 +298,6 @@ body{
     line-height: 1.2;
     text-decoration: none;
     letter-spacing: 0.02em;
-    padding-top: 100px;
     margin-bottom: 16px;
 }
 
@@ -327,6 +345,7 @@ body{
 
 .feature-img{
     display: block;
+    max-width: 100%;
 }
 
 
@@ -335,9 +354,16 @@ body{
     flex-wrap: wrap;
 }
 
-.img-border{
+.img-txt{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
     border: 0.5px solid var(--cloud);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-top: none;
+}
+
+.shadow{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .feature-item:not(:nth-child(3n)){
@@ -349,9 +375,7 @@ body{
 }
 
 .img-border .h3-tittle{
-    margin-top: 32px;
     margin-bottom: 8px;
-    margin-left: 16px;
 }
 
 
@@ -360,6 +384,4 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 32px;
-    margin-left: 16px;
 }

@@ -21,29 +21,34 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header container d-flex">
-      <nav class="header-nav d-flex">
-        <a class="logo" href="./index.html"><span class="logo-color">WEB</span>STUDIO</a>
-        <ul class="nav-list">
-          <li class="item"><a class="nav-link current" href="./index.html">Studio</a></li>
-          <li class="item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-          <li class="item"><a class="nav-link" href="#">Contacts</a></li>
+    <header class="header">
+      <div class="container d-flex">
+        <nav class="header-nav d-flex">
+          <a class="logo" href="./index.html"><span class="logo-color">WEB</span>STUDIO</a>
+          <ul class="nav-list">
+            <li class="item"><a class="nav-link current" href="./index.html">Studio</a></li>
+            <li class="item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+            <li class="item"><a class="nav-link" href="#">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <ul class="auth-list header-nav">
+          <li class="item">
+            <a class="auth-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a class="auth-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="auth-list header-nav">
-        <li class="item">
-          <a class="auth-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="item">
-          <a class="auth-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="section hero">
         <div class="container">
-          <div class="wrap"><h1 class="hero-title">Effective Solutions for Your Business</h1></div>
-          <button class="btn-hero" type="button">Order Service</button>
+          <div class="wrap">
+            <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          </div>
+          <button class="btn-title btn-hero" type="button">Order Service</button>
         </div>
       </section>
       <section class="section benefits">
@@ -97,23 +102,31 @@
           <ul class="team-list d-flex style-non">
             <li class="team-item">
               <img src="./images/Mark_Guerrero.jpg" alt="Mark Guerrero" width="264" />
-              <h3 class="h3-tittle card-name">Mark Guerrero</h3>
-              <p class="txt card-txt">Product Designer</p>
+              <div class="card-txt">
+                <h3 class="h3-tittle card-name">Mark Guerrero</h3>
+                <p class="txt">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/Tom_Ford.jpg" alt="Tom Ford" width="264" />
-              <h3 class="h3-tittle card-name">Tom Ford</h3>
-              <p class="txt card-txt">Frontend Developer</p>
+              <div class="card-txt">
+                <h3 class="h3-tittle card-name">Tom Ford</h3>
+                <p class="txt">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/Camila_Garcia.jpg" alt="Camila Garcia" width="264" />
-              <h3 class="h3-tittle card-name">Camila Garcia</h3>
-              <p class="txt card-txt">Marketing</p>
+              <div class="card-txt">
+                <h3 class="h3-tittle card-name">Camila Garcia</h3>
+                <p class="txt">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/Daniel_Wilson.jpg" alt="Daniel Wilson" width="264" />
-              <h3 class="h3-tittle card-name">Daniel Wilson</h3>
-              <p class="txt card-txt">UI Designer</p>
+              <div class="card-txt">
+                <h3 class="h3-tittle card-name">Daniel Wilson</h3>
+                <p class="txt">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
